@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+input {
+    font-family: Poppins, sans-serif;
+    font-size: 62.5% /* 10px - 1rem default */;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(circle, rgba(128, 0, 128, 1) 0%, rgba(75, 0, 130, 1) 100%) fixed;
+}
+
+/* Section One */
+
+section.intro {
+    display: flex;
+    min-height: 100vh;
+    max-width: 110rem;
+    padding: 0 2%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.offer-header {
+    display: flex;
+    align-items: center;
+    max-width: 110rem;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+.offer-header img:nth-child(2) {
+    height: 20rem;
+    width: 20rem;
+}
+
+.text-promote h1,
+.text-promote h2 {
+    color: white;
+    font-size: 3.2rem;
+    text-align: center;
+    text-shadow: 1px 1px 5px black;
+}
+
+.box-sobre {
+    display: flex;
+    flex-direction: column;
+    max-width: 70rem;
+    width: 100%;
+    margin: 2rem auto;
+    background: transparent;
+    box-shadow: 6px 6px 14px 0 rgba(0, 0, 0, 0.8), -8px -8px 18px 0 rgba(255, 255, 255, 0.55);
+    border-radius: 40px;
+    padding: 4px 30px 20px;
+}
+
+.box-sobre img {
+    height: auto;
+    width: 300px;
+    margin: 0 auto 1rem;
+}
+
+.box-sobre p {
+    color: white;
+    font-size: 2.4rem;
+    text-shadow: 1px 1px 5px black;
+}
+
+/* Section Two */
+
+section.tecnologias {
+    background-color: #e6e6fa;
+    padding: 2rem 0;
+}
+
+section.tecnologias > .container {
+    width: 100%;
+    max-width: 132rem;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+.tecnologias-header {
+    margin: 2rem 0;
+}
+
+.tecnologias-header h2 {
+    font-size: 2.8rem;
+    color: #1d1160;
+    text-align: center;
+}
+
+.tecnologias-header p {
+    font-size: 2rem;
+    color: black;
+    margin: 0 auto;
+    max-width: 90rem;
+    text-align: justify;
+    padding: 0 1rem;
+}
+
+.grid-tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 65rem;
+}
+
+.grid-tecnologias img {
+    margin: 20px;
+}
+
+.grid-tecnologias img:nth-child(1) {
+    height: auto;
+    width: 50rem;
+}
+
+.grid-tecnologias img:nth-child(2) {
+    height: auto;
+    width: 20rem;
+}
+
+.grid-tecnologias img:nth-child(3) {
+    height: 20rem;
+    width: auto;
+}
+
+/* Section Form */
+
+section.leads-form > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h1,
+.container h2 {
+    max-width: 110rem;
+    padding: 0 2%;
+    margin: 2rem auto;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 5rem;
+    overflow: hidden;
+}
+
+form input {
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    max-width: 50rem;
+    width: 100%;
+    height: 5.5rem;
+    margin: 1rem 0;
+    border-radius: 4.9rem;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 2rem;
+}
+
+form input::placeholder {
+    color: #ccc;
+    opacity: 1;
+}
+
+form input[type='submit'] {
+    width: 15rem;
+    height: 4.9rem;
+    border: none;
+    outline: none;
+    border-radius: 4.9rem;
+    cursor: pointer;
+    background-color: #eb1e64;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+form input[type='submit']:hover {
+    background-color: #f84fed;
+}
+
+div.box-sobre.form h1 {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 1px 1px 5px black;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    background-color: #e6e6fa;
+    padding: 3rem 2%;
+}
+
+footer h1 {
+    font-size: 2.8rem;
+    color: #1d1160;
+}
+
+footer p {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+footer .patrocinadores {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .patrocinadores img {
+    height: auto;
+    width: 30%;
+    max-width: 60rem;
+}
+
+/* Media Screen */
+
+@media screen and (max-width: 1000px) {
+    section.intro > .offer-header {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .offer-header img:nth-child(2) {
+        margin-top: -5rem;
+        margin-bottom: 5rem;
+    }
+}
